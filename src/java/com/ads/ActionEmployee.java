@@ -5,11 +5,13 @@
  */
 package com.ads;
 
+import com.opensymphony.xwork2.ActionSupport;
+
 /**
  *
  * @author Chanky-JVM
  */
-public class ActionEmployee 
+public class ActionEmployee extends ActionSupport
 {
     
     public String execute()

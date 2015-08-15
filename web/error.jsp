@@ -13,5 +13,7 @@
     </head>
     <body>
         <h1>Error Page !! </h1>
+        <%= request.getParameter("type") %>
+        
     </body>
 </html>

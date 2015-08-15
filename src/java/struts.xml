@@ -6,7 +6,7 @@
     <package name="default" extends="struts-default" namespace="/">
           <action name="getEmployee" class="com.ads.ActionEmployee">
               <result name="success" >view.jsp</result>
-              <result name="error">error.jsp</result>
+              <result name="error">error.jsp?type=fp</result>
           </action>
     </package>
 </struts>
