@@ -1,0 +1,137 @@
+/* 
+    Created on : Sep 2, 2015, 10:13:27 AM
+    Author     : Mallick
+*/
+body
+{
+    margin: 0px;
+}
+#add_catagory_Heading
+{
+    margin:0px auto;
+    width:100%;
+    height:50px;
+    background-image: url("../Analytix_Inventory_Assets/hd.jpg");
+    background-size: cover;
+    color: rgb(250, 245, 245);
+    text-shadow: rgb(3, 3, 3) 4px 4px 4px;
+    font-size: 30px;
+    font-family: "Lucida Console", Courier, monospace;
+    padding-top: 10px;
+}
+
+td
+{
+    font-size: 16px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: bold;
+    color:grey;
+}
+.textBox
+{
+     
+                                                                        width:220px;
+				border-style:none;
+				height:30px;
+				border-radius:3px;
+				color:gray;
+				opacity:0.95;
+				font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+				font-size:15px;
+				text-align:center;
+                                                                                -webkit-box-shadow: -1px 0px 8px -1px rgba(0,0,0,0.77);
+                                                                                -moz-box-shadow: -1px 0px 8px -1px rgba(0,0,0,0.77);
+                                                                                 box-shadow: -1px 0px 8px -1px rgba(0,0,0,0.77);                                                                                
+}
+.button
+{
+                                                                                                    width:220px;
+					height:38px;
+					border-style:none;
+					border-radius:5px;
+					background :-webkit-gradient(linear,left top,left bottom,from(#0050B0), to(#2085FF));
+					background:-moz-linear-gradient(top, #0050B0, #2085FF);					
+					color:white;
+					font-size:16px;
+					margin-bottom:10px;	 
+    
+}
+.button:hover
+{
+                                                                                                   
+					background :-webkit-gradient(linear,left top,left bottom,from(#2085FF), to(#0050B0));
+					background:-moz-linear-gradient(top, #2085FF, #0050B0);
+                                                                                                    cursor: pointer;
+                                                                                            
+}
+
+#Cart_Item_Container
+{
+    width:55%;    
+    float: right;      
+    margin-top: 20px;
+    margin-right: 20px;   
+    
+}
+#Cart_Item_Container_header
+{
+    width:100%;
+    height: 40px;
+    background-color: #a9e4f7; 
+    color: navy;
+    border-radius: 5px;
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: bold;
+  
+}
+.menu_textbox_big
+{
+    margin-right: 5px;
+       margin-top: 5px;
+       width:220px;
+				border-style:none;
+				height:35px;
+				border-radius:3px;
+				color:blue;
+				
+				font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+				font-size:15px;
+				text-align:center;
+                                                                     -webkit-box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);
+                                                                                -moz-box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);
+                                                                                 box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);   
+}
+.menu_textbox
+{
+    
+    
+    margin-right: 5px;
+    margin-top: 5px;
+    width:100px;
+				border-style:none;
+				height:35px;
+				border-radius:3px;
+				color:blue;
+				
+				font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+				font-size:15px;
+				text-align:center;
+                                                                     -webkit-box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);
+                                                                                -moz-box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);
+                                                                                 box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);   
+}
+
+.remove_button
+{
+    width:37px;
+    height:39px;
+    border:none;
+    font-weight: bold;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    
+    
+}
