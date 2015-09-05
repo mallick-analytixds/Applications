@@ -5,7 +5,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.Analytix.Beans.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -30,7 +29,7 @@ public class BillingServlet extends HttpServlet
      int GrossTotal =  Integer.parseInt(request.getParameter("GrossTotal"));     
      int AllTotalItem = Integer.parseInt(request.getParameter("AllTotalItem")); 
      String Customer_name = request.getParameter("customer_name");
-     String PreparedBy = "Admin";
+     String PreparedBy = request.getSession().getAttribute("username").toString();
   
      
      try{
@@ -81,10 +80,9 @@ public class BillingServlet extends HttpServlet
                     
                     if(success_MAIN_BILL_ENTRY>0 && succes_STOCK_DEDUCTION.length == NoOfParameters && succes_CART_TABLE_ENTRY.length == NoOfParameters)
                     {
-                    connection.commit();
-                    response.sendRedirect("JSP_Container/Dashboard.jsp?Bill="+BILL_ID_NO);                  
+                    connection.commit();                                      
                     }
-                    
+                    response.sendRedirect("JSP_Container/Dashboard.jsp?Bill="+BILL_ID_NO);
             }
      catch(Exception e)
             {
@@ -94,7 +92,7 @@ public class BillingServlet extends HttpServlet
                          } catch (Exception f) 
                          {
                          }
-                        
+                        response.sendRedirect("JSP_Container/Dashboard.jsp?Status=fail");
                         e.printStackTrace();
             }
             finally
@@ -102,7 +100,9 @@ public class BillingServlet extends HttpServlet
                 try 
                 {
                       connection.setAutoCommit(true);
-                } catch (Exception e) {
+                } 
+                catch (Exception e) 
+                {
                 }
                   
             }

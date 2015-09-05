@@ -20,32 +20,33 @@
         </div>
         <hr style="width:100%;">
         <form>
-        <table align="center" style="width: 100%"  cellspacing="10">
+        <table align="center" style="width: 100%"  cellspacing="10" >
             <tr>
                 <td>Product ID</td>      
-                <td align="right"><input type="text" name="product_id" class="textBox"/></td>        
+                <td align="right"><input type="text" name="product_id" class="textBox" readonly="true" value="Automatic" /></td>   
+                <td>Product Name</td>      
+                <td align="right"><input type="text" name="product_name" class="textBox" id="product_name"/></td>       
             </tr>     
                <tr>
                         <td>Choose Catagory</td>      
                         <td align="right">
-                            <select class="textBox">
+                            <select class="textBox" name="product_catagory" id="product_catagory">
                                 <c:forEach items="${selectlist.mylist}" var="menuitem">
                                 <option>${menuitem}</option>    
                                 </c:forEach>
                              </select>
                                 
                         </td>        
-                        <td>Product Name</td>      
-                        <td align="right"><input type="text" name="product_name" class="textBox"/></td>                        
+                <td>Quantity</td>      
+                <td align="right"><input type="text" name="product_quantity" class="textBox" id="product_quantity"/></td>             
             </tr>                    
             <tr>
-                <td>Quantity</td>      
-                <td align="right"><input type="text" name="product_quantity" class="textBox"/></td>        
+                <td></td><td></td>     
                 <td>Price / Item</td>      
-                <td align="right"><input type="text" name="product_quantity" class="textBox"/></td>                        
+                <td align="right"><input type="text" name="product_price" class="textBox" id="product_price"/></td>                        
             </tr>                    
             <tr align="right">
-                <td colspan="4" >   <br><br><input type="button" value="Add Product" class="button" /></td>
+                <td colspan="4" >   <br><br><input type="button" onclick="ProductSave()" value="Add Product" class="button" /></td>
             </tr>
         </table>
         </form>

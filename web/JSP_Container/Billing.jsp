@@ -55,7 +55,7 @@
              <tr> 
              <td>Total Item Amount</td>      
                 <td align="right">
-                    <input type="text" id="totalItemAmount" class="textBox"> 
+                    <input type="text" readonly="" id="totalItemAmount" class="textBox"> 
                 </td>        
             </tr> 
             <tr align="right">
@@ -68,13 +68,13 @@
             <div id="Cart_Item_Container_header">
                 <center>CART ITEMS<center>
             </div>
-            <form action="../BillingServlet" method="get">
+            <form action="../BillingServlet" id="cartForm" method="get">
             <input type="hidden" name="no_of_items" value="0" id="no_of_items"/>
             <br>
             <table align="left" style="width: 100%" >        
                 <tr>
                     <td >Customer Name</td>
-                    <td align="right"><input type="text" name="customer_name" class="textBox"/></td>
+                    <td align="right"><input type="text" id="customer_name" name="customer_name" class="textBox"/></td>
                 </tr>  
             </table>
             <br><br>
@@ -92,10 +92,12 @@
             </div> 
             <br><br>
             
-            <input type="text" name="GrossTotal" id="GrossTotal" value="0" class="menu_textbox" style="float: right; margin-right: 50px;"/>
-            <input type="text" name="AllTotalItem" id="AllTotalItem" value="0" class="menu_textbox" style="float: right;margin-right: 110px;"/>
-            <br><br>
-            <input type="submit" value="Generate Bill" class="button"/>
+            <input type="text" name="GrossTotal" id="GrossTotal" readonly="" value="0" class="menu_textbox" style="float: right; margin-right: 50px; background-color: darkred; color:white !important ;font-weight: bold;"/>
+            <input type="text"   readonly="" value="Gross:" class="menu_textbox" style="float: right; background-color: White;color: black !important;font-weight: bold;"/>
+            <input type="text" name="AllTotalItem" id="AllTotalItem" readonly="" value="0" class="menu_textbox" style="float: right;background-color: dodgerblue;color: #ffffff !important;font-weight: bold;"/>
+             <input type="text"  readonly="" value="Qnt :" class="menu_textbox" style="float: right; background-color: White;color: black !important;font-weight: bold;"/>
+             <br><br><br>
+            <input type="button" value="Generate Bill" onclick="billGenerateValidation()" class="button"/>
             </form>
         </div>
     </body>

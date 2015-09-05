@@ -71,6 +71,7 @@ td
     float: right;      
     margin-top: 20px;
     margin-right: 20px;   
+    max-height: 400px;
     
 }
 #Cart_Item_Container_header
@@ -88,20 +89,7 @@ td
 }
 .menu_textbox_big
 {
-    margin-right: 5px;
-       margin-top: 5px;
-       width:220px;
-				border-style:none;
-				height:35px;
-				border-radius:3px;
-				color:blue;
-				
-				font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-				font-size:15px;
-				text-align:center;
-                                                                     -webkit-box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);
-                                                                                -moz-box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);
-                                                                                 box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);   
+ 
 }
 .menu_textbox
 {
@@ -126,12 +114,61 @@ td
 .remove_button
 {
     width:37px;
-    height:39px;
+    height:38px;
     border:none;
     font-weight: bold;
-    background-color: black;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aebcbf+0,6e7774+50,0a0e0a+51,0a0809+100;Black+Gloss */
+background: rgb(174,188,191); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(174,188,191,1) 0%, rgba(110,119,116,1) 50%, rgba(10,14,10,1) 51%, rgba(10,8,9,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,188,191,1)), color-stop(50%,rgba(110,119,116,1)), color-stop(51%,rgba(10,14,10,1)), color-stop(100%,rgba(10,8,9,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */
     color:white;
     cursor: pointer;
+    border-radius: 3px;
+    
+    
+}
+
+.menu_textbox_readonly
+{
+    margin-right: 5px;
+    margin-top: 5px;
+    width:100px;
+				border-style:none;
+				height:35px;
+				border-radius:3px;
+				color:blue;
+				background-color: #feccb1;
+				font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+				font-size:15px;
+				text-align:center;
+                                                                                -webkit-box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);
+                                                                                -moz-box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);
+                                                                                 box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);   
+    
+}
+
+.menu_textbox_readonly_big
+{
+
+                                                                    margin-right: 5px;
+                                                                   margin-top: 5px;
+                                                                   width:220px;
+                                                                    border-style:none;
+				height:35px;
+				border-radius:3px;
+				color:blue;
+				background-color: #f2825b;
+				font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+				font-size:15px;
+				text-align:center;
+                                                                     -webkit-box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);
+                                                                                -moz-box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);
+                                                                                 box-shadow: -1px 0px 5px -1px rgba(0,0,0,0.77);  
     
     
 }

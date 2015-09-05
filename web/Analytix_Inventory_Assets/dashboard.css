@@ -7,10 +7,31 @@ and open the template in the editor.
     Created on : Sep 1, 2015, 3:56:59 AM
     Author     : Mallick
 */
-
 body
 {
-margin: 0px auto;
+    margin:0px;
+    background-image: url("../Analytix_Inventory_Assets/bg1.jpg");
+    background-size: cover;
+    max-height: 600px;
+    overflow: hidden;
+        
+}
+
+.textBox
+{
+     
+                                                                        width:220px;
+				border-style:none;
+				height:30px;
+				border-radius:3px;
+				color:gray;
+				opacity:0.95;
+				font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+				font-size:15px;
+				text-align:center;
+                                                                                -webkit-box-shadow: -1px 0px 8px -1px rgba(0,0,0,0.77);
+                                                                                -moz-box-shadow: -1px 0px 8px -1px rgba(0,0,0,0.77);
+                                                                                 box-shadow: -1px 0px 8px -1px rgba(0,0,0,0.77);                                                                                
 }
 .fixed_header
 {
@@ -150,6 +171,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
     width:80%;
     height:800px;    
     margin:0px auto;    
+    background-color: white;
     -webkit-box-shadow: -1px 0px 13px -1px rgba(0,0,0,0.77);
     -moz-box-shadow: -1px 0px 13px -1px rgba(0,0,0,0.77);
     box-shadow: -1px 0px 13px -1px rgba(0,0,0,0.77);

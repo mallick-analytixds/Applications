@@ -20,10 +20,10 @@
         <table align="center" style="width: 50%">
             <tr>
                 <td>Catagory Name</td>      
-                <td align="right"><input type="text" name="catagory" class="textBox"/></td>        
+                <td align="right"><input type="text" name="catagory" id="catagoryTB" class="textBox"/></td>        
             </tr>         
             <tr align="right">
-                <td colspan="2" >   <br><br><input type="button" value="Add Catagory" class="button" /></td>
+                <td colspan="2" >   <br><br><input type="button" value="Add Catagory" onclick="CatagorySave()" class="button" /></td>
             </tr>
         </table>
         </form>

@@ -43,7 +43,7 @@ public class ProductInfo extends HttpServlet
                                 }
                                 else
                                 {                                                    
-                                out.println("<input type=\"text\" id='pricePerItem' value='"+rs.getInt(1)+"' class=\"textBox\"/> \n" );
+                                out.println("<input type=\"text\" readonly=\"\" id='pricePerItem' value='"+rs.getInt(1)+"' class=\"textBox\"/> \n" );
                                 }
                                                        
 

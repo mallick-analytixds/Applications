@@ -11,36 +11,39 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(urlPatterns = {"/AddCatagory"})
-public class AddCatagory extends HttpServlet {
+@WebServlet(urlPatterns = {"/AddProduct"})
+public class AddProduct extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
     {
-                                
-                        String catagory   = request.getParameter("catagory");
+                     
                         try
                          {                             
                             Connection connection= com.analytix.Beans.ConnectionObjectSingleton.getConnectionObject();                                 
-                            PreparedStatement pst =  connection.prepareStatement("insert into TBL_CATAGORY values (?)");                            
-                            pst.setString(1, catagory);                     
-                            int status = pst.executeUpdate();   
-                            if(status == 1)
+                            PreparedStatement pst =  connection.prepareStatement("insert into TBL_STOCK (PRODUCT_CATAGORY,PRODUCT_NAME,PRODUCT_QUANTITY,PRODUCT_PRICE) values (?,?,?,?)");     
+                            pst.setString(1, request.getParameter("product_catagory"));
+                            pst.setString(2, request.getParameter("product_name"));     
+                            pst.setInt(3, Integer.parseInt(request.getParameter("product_quantity")));   
+                            pst.setInt(4,  Integer.parseInt(request.getParameter("product_price")));   
+                            int status = pst.executeUpdate();  
+                            
+                             if(status == 1)
                             {
                                 System.out.println("------------------------------------"+status);
-                                response.getWriter().println("You Added a New Catagory : "+ catagory);
+                                response.getWriter().println("You Added Product : "+ request.getParameter("product_name") +" With :" +request.getParameter("product_quantity")+" Quantity");
                                 
                             }
                             else
                             {
                                 System.out.println("-------------------------------------"+status);
-                               response.getWriter().println("Failed to Add Catagory");
+                               response.getWriter().println("Failed to Add Product");
                             }
                             
                          }
                          catch(Exception e)
                          {
-                           response.getWriter().println("Failed to Add Catagory");
+                             response.getWriter().println("Failed to Add Product");
                             e.printStackTrace();
                          }
                       
